@@ -46,7 +46,20 @@ Live Demo: [ProjectSync](https://airbnb-clone-react.onrender.com/)
 Follow these steps to install and run the project locally:
 
 ### 1. Clone the Repository:
+```bash
+git clone https://github.com/ashwaniMaddheshiya/Airbnb-Clone.git
+cd ProjectSync
 
+### 2. Install Dependencies:
+- Frontend:
+- Backend:
+### 3. Environment Setup:
+-Create a .env file in the Backend directory and add your environment variables, including MongoDB connection details.
+### 4. Start the Development Servers:
+- Frontend:
+- Backend:
+### 5. Access the Application:
+-Open your web browser and navigate to http://localhost:3000 to access the application.
 ```bash
 git clone https://github.com/ashwaniMaddheshiya/Airbnb-Clone.git
 cd ProjectSync
