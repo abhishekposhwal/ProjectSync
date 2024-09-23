@@ -1,6 +1,6 @@
 # ProjectSync
 
-Live Demo: [ProjectSync](https://airbnb-clone-react.onrender.com/)
+Live Demo: [ProjectSync](https://)
 
 ## Description
 
@@ -15,14 +15,6 @@ Live Demo: [ProjectSync](https://airbnb-clone-react.onrender.com/)
 - **Role-Based Access Control**: Ensures secure access to sensitive project data, preserving academic integrity.
 - **Testing & Feedback**: Iteratively tested with real users, gathering feedback for ongoing improvements.
 
-## Features
-
-- User authentication and authorization.
-- Property listing creation and management.
-- Booking accommodations with date selection.
-- Secure file uploads for property images.
-- Interactive Google Maps to view property locations.
-
 ## Technologies Used
 
 ### Frontend:
@@ -31,15 +23,11 @@ Live Demo: [ProjectSync](https://airbnb-clone-react.onrender.com/)
 - **Context API** for state management
 - **Axios** for API requests
 - **Tailwind CSS** for styling
-- **Google Maps API** for location services
-- **JWT** for authentication
 
 ### Backend:
 - **Node.js** and **Express.js**
 - **MongoDB** for the database
 - **Mongoose** for database modeling
-- **JWT** for user authentication
-- **Multer** for file uploads
 
 ## Installation
 
@@ -49,17 +37,26 @@ Follow these steps to install and run the project locally:
 ```bash
 git clone https://github.com/ashwaniMaddheshiya/Airbnb-Clone.git
 cd ProjectSync
-
+```
 ### 2. Install Dependencies:
 - Frontend:
+```bash
+npm install
+```
 - Backend:
+```bash
+npm install
+```
 ### 3. Environment Setup:
 -Create a .env file in the Backend directory and add your environment variables, including MongoDB connection details.
 ### 4. Start the Development Servers:
 - Frontend:
+```bash
+npm start
+```
 - Backend:
+```bash
+npm run dev
+```
 ### 5. Access the Application:
 -Open your web browser and navigate to http://localhost:3000 to access the application.
-```bash
-git clone https://github.com/ashwaniMaddheshiya/Airbnb-Clone.git
-cd ProjectSync
