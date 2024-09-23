@@ -4,13 +4,12 @@ Live Demo: [ProjectSync](https://)
 
 ## Description
 
-**ProjectSync** is an integrated online platform designed to manage and streamline student final-year projects within higher education institutions. It addresses critical project management needs, including project allocation, progress tracking, communication, file sharing, and evaluation.
+**ProjectSync** is an integrated online platform designed to manage and streamline student final-year projects within higher education institutions. It addresses critical project management needs, including project allocation, progress tracking, communication and evaluation.
 
 ### Key Features:
 
 - **Automated Group Formation**: Automatically forms project groups and allocates projects, reducing manual administrative tasks.
 - **Progress Tracking**: Tracks the progress of projects, ensuring smooth collaboration between students and faculty.
-- **Document Sharing**: Secure file sharing for project documentation.
 - **Communication & Feedback**: Facilitates seamless communication and feedback between students and advisors.
 - **Role-Based Access Control**: Ensures secure access to sensitive project data, preserving academic integrity.
 - **Testing & Feedback**: Iteratively tested with real users, gathering feedback for ongoing improvements.
