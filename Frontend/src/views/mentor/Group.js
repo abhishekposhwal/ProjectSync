@@ -135,7 +135,7 @@ export default function Group() {
                         onClick={handleCloseMemberDetailsModal}
                     ></div>
                     <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-white-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                             <div>
 
 
@@ -149,11 +149,11 @@ export default function Group() {
                                         </div>
 
                                         <div class="mt-4 text-center">
-                                            <h3 class="font-medium leading-6 text-gray-800 capitalize dark:text-white" id="modal-title">
+                                            <h3 class="font-medium leading-6 text-gray-800 capitalize dark:text-black" id="modal-title">
                                                 Invite your team
                                             </h3>
 
-                                            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                                            <p class="mt-2 text-sm text-black-500 dark:text-black-400">
                                                 Your new group has been successfully created.
                                                 Now it's time to invite your team to collaborate on this project.
                                                 Together, we can achieve great things!
@@ -161,7 +161,7 @@ export default function Group() {
                                         </div>
                                     </div>
 
-                                    <h3 class="font-medium leading-6 text-gray-800 capitalize dark:text-white mt-5 " id="modal-title">
+                                    <h3 class="font-medium leading-6 text-black-800 text-center capitalize dark:text-black mt-5 " id="modal-title">
                                         Group Name
                                     </h3>
 
@@ -170,19 +170,19 @@ export default function Group() {
                                             groupMemberDataByGroup.data
                                                 .filter(member => member.member_role.toLowerCase() !== 'mentor') // Exclude mentors
                                                 .map((member, index) => (
-                                                    <div key={index} className="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mt-3 mb-3">
-                                                        <div className="w-2 bg-gray-800 dark:bg-gray-900"></div>
+                                                    <div key={index} className="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-white-800 mt-3 mb-3">
+                                                        <div className="w-2 bg-white-800 dark:bg-white-900"></div>
                                                         <div className="flex items-center px-2 py-3">
                                                             <img className="object-cover w-10 h-10 rounded-full" alt="User avatar" src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200" />
                                                             <div className="mx-3">
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.name}</p>
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.email}</p>
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.member_role}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.name}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.email}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.member_role}</p>
                                                             </div>
                                                             <div className="mx-3">
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.gender}</p>
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.mobileNumber}</p>
-                                                                <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.rollNumber}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.gender}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.mobileNumber}</p>
+                                                                <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.rollNumber}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -195,7 +195,7 @@ export default function Group() {
                                     <button
                                         type="button"
                                         onClick={handleCloseMemberDetailsModal}
-                                        className="mt-5 w-full py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-full  dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
+                                        className="mt-5 w-full py-2 text-sm font-medium tracking-wide text-black-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-full  dark:text-black-200 dark:border-gray-700"
                                         disabled={submitting}
                                     >
                                         Cancel
@@ -241,14 +241,14 @@ export default function Group() {
                                                         )
                                                         .map((group, groupIndex) => (
                                                             <div key={groupIndex} className="w-full sm:w-1/2 md:w-1/2 lg:w-2/4 xl:w-3/6 px-2 mb-4">
-                                                                <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                                                                <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-white-800">
                                                                     <div className="p-6">
                                                                         <div className="flex items-center justify-between">
-                                                                            <span className="text-sm font-light text-gray-600 dark:text-gray-400">
+                                                                            <span className="text-sm font-light text-black-600 dark:text-black-400">
                                                                                 Assign at {new Date(group.createdAt).toLocaleDateString()}
                                                                             </span>
 
-                                                                            <button onClick={() => handleOpenMemberDetailsModal(group._id)} className="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                                                            <button onClick={() => handleOpenMemberDetailsModal(group._id)} className="px-4 py-2 font-medium text-black-600 transition-colors duration-200 sm:px-6 dark:hover:bg-white-800 dark:text-black-300">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
                                                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                                                                 </svg>
@@ -256,7 +256,7 @@ export default function Group() {
                                                                         </div>
 
                                                                         <div className="flex items-center justify-between">
-                                                                            <span className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600">
+                                                                            <span className="block mt-2 text-xl font-semibold text-black-800 transition-colors duration-300 transform dark:text-black hover:text-black-600">
                                                                                 {group.name}
                                                                             </span>
                                                                         </div>
@@ -270,7 +270,7 @@ export default function Group() {
                                                 {groupData && groupData.length === 0 && (
                                                     <div className="flex items-center mt-6 text-center border rounded-lg h-96 dark:border-gray-700 mb-5">
                                                         <div className="flex flex-col w-full max-w-sm px-4 mx-auto">
-                                                            <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-gray-800">
+                                                            <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-white-800">
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     fill="none"

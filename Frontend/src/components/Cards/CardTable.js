@@ -23,17 +23,22 @@ export default function CardTable({
       >
         <div className="block w-full overflow-x-auto">
           <section className="container px-4 mx-auto">
-            <div className="sm:flex sm:items-center sm:justify-between">
-              <h2 className="text-lg font-medium text-gray-800 dark:text-white mt-5">
-                {totalBadgeName}
-              </h2>
+            <div className="sm:flex sm:items-center sm:justify-between mx-4">
+            <div className="flex items-center mt-4 gap-x-3">
+                <h2 className="text-lg font-medium text-gray-800 dark:text-black">
+                  Total
+                </h2>
+                <span className="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-white-800 dark:text-white-400">
+                  {`${data.length} ${totalBadgeName}`}
+                </span>
+              </div>
               <div className="flex items-center mt-4 gap-x-3">
                 {/* <button onClick={refreshTable} class="w-1/2 px-5 py-2 text-sm text-gray-800 transition-colors duration-200 bg-white border rounded-lg sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-white dark:border-gray-700">
                   Refresh
                 </button> */}
 
                 {addButtonName && (
-                  <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                  <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -55,26 +60,26 @@ export default function CardTable({
               </div>
             </div>
             <section className="container px-4 mx-auto">
-              <div className="flex items-center gap-x-3">
-                <h2 className="text-lg font-medium text-gray-800 dark:text-white">
+              {/* <div className="flex items-center gap-x-3">
+                <h2 className="text-lg font-medium text-gray-800 dark:text-black">
                   Total
                 </h2>
-                <span className="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">
+                <span className="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-white-800 dark:text-white-400">
                   {`${data.length} ${totalBadgeName}`}
                 </span>
-              </div>
+              </div> */}
               <div className="flex flex-col mt-6">
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                  <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-                    <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
-                      <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                        <thead className="bg-gray-50 dark:bg-gray-800">
+                  <div className="inline-block min-w-full pb-6 align-middle md:px-6 lg:px-8">
+                    <div className="overflow-hidden border md:rounded-lg">
+                      <table className="min-w-full divide-y divide-white-200 dark:divide-white-700">
+                        <thead className="bg-blueGray-50 text-blueGray-500">
                           <tr>
                             {columns.map((column) => (
                               <th
                                 key={column}
                                 scope="col"
-                                className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                                className="py-3.5 px-4 text-xs font-normal text-left rtl:text-right text-black-500 dark:text-black"
                               >
                                 {column}
                               </th>
@@ -84,13 +89,13 @@ export default function CardTable({
                             </th>
                           </tr>
                         </thead>
-                        <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                        <tbody className="bg-white dark:bg-white-900">
                           {data.map((row, rowIndex) => (
                             <tr key={rowIndex}>
                               {columns.map((column, colIndex) => (
                                 <td
                                   key={colIndex}
-                                  className="px-4 py-4 text-sm text-gray-700 whitespace-nowrap dark:text-gray-300"
+                                  className="px-4 py-4 text-xs text-gray-700 whitespace-nowrap dark:text-black"
                                 >
                                   {row[column]}
                                 </td>
@@ -100,7 +105,7 @@ export default function CardTable({
                                   {handleDelete && (
                                     <button
                                       onClick={() => handleDelete(row._id)} // Pass _id to handleDelete
-                                      className="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none"
+                                      className="text-black-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-black-300 hover:text-red-500 focus:outline-none"
                                     >
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +133,7 @@ export default function CardTable({
                     {data.length === 0 && (
                       <div className="flex items-center mt-6 text-center border rounded-lg h-96 dark:border-gray-700">
                         <div className="flex flex-col w-full max-w-sm px-4 mx-auto">
-                          <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-gray-800">
+                          <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-white-800">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -149,13 +154,13 @@ export default function CardTable({
                           </h1>
                           <p className="mt-2 text-gray-500 dark:text-gray-400">
                             Your search did not match any vendors. Please try
-                            again or create a new vendor.
+                            again or create a new group.
                           </p>
-                          <div className="flex items-center mt-4 sm:mx-auto gap-x-3">
+                          {/* <div className="flex items-center mt-4 sm:mx-auto gap-x-3">
                             <button className="w-1/2 px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
                               Clear Search
                             </button>
-                            <button className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                            <button className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -170,9 +175,9 @@ export default function CardTable({
                                   d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                                 />
                               </svg>
-                              <span>Add Vendor</span>
+                              <span>Add New Group</span>
                             </button>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     )}

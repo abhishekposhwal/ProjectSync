@@ -32,7 +32,7 @@ export default function CardTable({
                 </button> */}
 
                 {addButtonName && (
-                  <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                  <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -58,7 +58,7 @@ export default function CardTable({
                 <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                   <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
 
-                    <div class="lg:w-lg overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mb-5">
+                    <div class="lg:w-lg overflow-hidden bg-white rounded-lg shadow-md dark:bg-white-800 mb-5">
                       {/* <img class="object-cover w-full h-64" src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Article"> */}
 
                       <div className="p-6">
@@ -75,7 +75,7 @@ export default function CardTable({
                                   Add
                                 </button>
                               </div>
-                              <span className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600">
+                              <span className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-black">
                                 {group.name}
                               </span>
                               <div className="mt-4">
@@ -87,23 +87,23 @@ export default function CardTable({
                                         src={member.avatarUrl}
                                         alt="Avatar"
                                       />
-                                      <span className="mx-2 font-semibold text-gray-700 dark:text-gray-200">
+                                      <span className="mx-2 font-semibold text-black-700 dark:text-black-200">
                                         {member.name}
                                       </span>
                                     </div>
-                                    <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                    <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                       {member.rollNumber}
                                     </span>
-                                    <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                    <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                       {member.section}
                                     </span>
-                                    <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                    <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                       {member.mobileNumber}
                                     </span>
-                                    <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                    <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                       {member.course}
                                     </span>
-                                    <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                    <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                       {member.role}
                                     </span>
                                   </div>
@@ -122,23 +122,23 @@ export default function CardTable({
                                             src={group.mentor.avatarUrl}
                                             alt="Mentor Avatar"
                                           />
-                                          <span className="font-semibold text-gray-700 dark:text-gray-200">
+                                          <span className="font-semibold text-black-700 dark:text-black-200">
                                             {group.mentor.name}
                                           </span>
                                         </div>
-                                        <span className="mx-2 text-xs text-gray-600 dark:text-gray-300">
+                                        <span className="mx-2 text-xs text-gray-600 dark:text-black-300">
                                           {group.mentor.rollNumber}
                                         </span>
-                                        <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                        <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                           {group.mentor.section}
                                         </span>
-                                        <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                        <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                           {group.mentor.mobileNumber}
                                         </span>
-                                        <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                        <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                           {group.mentor.course}
                                         </span>
-                                        <span className="mx-1 text-xs text-gray-600 dark:text-gray-300">
+                                        <span className="mx-1 text-xs text-gray-600 dark:text-black-300">
                                           Mentor
                                         </span>
                                       </div>
@@ -156,7 +156,7 @@ export default function CardTable({
                     {data.length === 0 && (
                       <div className="flex items-center mt-6 text-center border rounded-lg h-96 dark:border-gray-700 mb-5">
                         <div className="flex flex-col w-full max-w-sm px-4 mx-auto">
-                          <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-gray-800">
+                          <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-white-800">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -184,7 +184,7 @@ export default function CardTable({
                               Clear Search
                             </button> */}
                             {addButtonName && (
-                              <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                              <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   fill="none"

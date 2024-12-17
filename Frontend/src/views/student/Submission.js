@@ -96,18 +96,18 @@ export default function Settings() {
                 <div className="w-full xl:w-10/12 max-w-2xl">
                     <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-white">
                         <div className="block w-full overflow-x-auto">
-                            <section className="max-w-4xl p-6 mx-auto  dark:bg-gray-800">
+                            <section className="max-w-4xl p-6 mx-auto  dark:bg-white-800">
                                 <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Search Submission By Group</h2>
                                 <form>
                                     <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="groupDropdown">Group</label>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="groupDropdown">Group</label>
                                             <select
                                                 name="groupId"
                                                 id="groupId"
                                                 value={formData.groupId}
                                                 onChange={handleChange}
-                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-4 py-2 mt-2 text-gray-700 text-xs bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                             >
                                                 <option value="" disabled>
                                                     Select Group
@@ -127,7 +127,7 @@ export default function Settings() {
                                         </div>
                                     </div>
                                     <div className="flex justify-end mt-6">
-                                        <button onClick={fetchProjectsByGroup} className="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Search</button>
+                                        <button onClick={fetchProjectsByGroup} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">Search</button>
                                     </div>
                                 </form>
                             </section>
@@ -141,7 +141,7 @@ export default function Settings() {
                     <div className="w-full xl:w-10/12 max-w-2xl">
                         {projects.map((project) => (
                             <div key={project._id} className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-white">
-                                <div className="max-w-2xl overflow-hidden dark:bg-gray-800 m-4">
+                                <div className="max-w-2xl overflow-hidden dark:bg-white-800 m-4">
 
                                     <div className="p-6">
                                         <div class="flex items-center justify-between">
@@ -158,26 +158,26 @@ export default function Settings() {
                                         </div>
                                         <div>
                                             <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">{project.groupName}</span>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                                                <b className=" mt-2 text-lg  text-gray-800"> Title -</b> {project.title}
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400">
+                                                <b className=" mt-2 text-lg  text-black-800"> Title -</b> {project.title}
                                             </p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Introduction</b> - {project.introduction}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Category</b> - {project.category}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Problem Statement</b> - {project.problemStatement}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Required Technology</b> - {project.requiredTechnology}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Software Requirement</b> - {project.softwareRequirement}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Hardware Requirement</b> - {project.hardwareRequirement}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>Conclusion</b> - {project.conclusion}</p>
-                                            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400"><b>References</b> - {project.references}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Introduction</b> - {project.introduction}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Category</b> - {project.category}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Problem Statement</b> - {project.problemStatement}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Required Technology</b> - {project.requiredTechnology}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Software Requirement</b> - {project.softwareRequirement}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Hardware Requirement</b> - {project.hardwareRequirement}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>Conclusion</b> - {project.conclusion}</p>
+                                            <p className="mt-2 text-sm text-black-600 dark:text-black-400"><b>References</b> - {project.references}</p>
                                             {/* <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Submission Status - {project.submission.status}</p>
                                             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Mentor Approval - {project.submission.mentorApproval}</p> */}
                                         </div>
                                         {/* <div className="mt-4">
                                             <div className="flex items-center">
                                                 <img className="object-cover h-10 rounded-full" src="https://via.placeholder.com/150" alt="Avatar" />
-                                                <p className="mx-2 font-semibold text-gray-700 dark:text-gray-200">{project.mentorName}</p>
+                                                <p className="mx-2 font-semibold text-black-700 dark:text-black-200">{project.mentorName}</p>
                                                
-                                                <span className="mx-1 text-xs text-gray-600 dark:text-gray-300 mt-1"></span>
+                                                <span className="mx-1 text-xs text-gray-600 dark:text-black-300 mt-1"></span>
                                             </div>
                                         </div> */}
                                     </div>

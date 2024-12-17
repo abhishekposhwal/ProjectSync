@@ -151,7 +151,7 @@ export default function User() {
         <div className="fixed inset-0 z-50 overflow-y-auto">
           <div className="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-sm" onClick={handleCloseModal}></div>
           <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-            <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+            <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-white-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
               <div>
                 <div className="flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
@@ -160,34 +160,34 @@ export default function User() {
                 </div>
 
                 <div className="mt-2">
-                  <h3 className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white text-center" id="modal-title">Add User</h3>
+                  <h3 className="text-lg font-medium leading-6 text-black-800 capitalize dark:text-black text-center" id="modal-title">Add User</h3>
                   <form onSubmit={handleSubmit} className="mt-4" action="#">
                     <label className="block mt-3" htmlFor="userName">
-                      <input type="text" name="userName" id="userName" placeholder="User Name" value={formData.userName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="userName" id="userName" placeholder="User Name" value={formData.userName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
                     <label className="block mt-3" htmlFor="email">
-                      <input type="email" name="email" id="email" placeholder="xyz@niet.co.in" value={formData.email} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="email" name="email" id="email" placeholder="xyz@niet.co.in" value={formData.email} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
 
                     <label className="block mt-3" htmlFor="fullName">
-                      <input type="text" name="fullName" id="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="fullName" id="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
 
                     <label className="block mt-3" htmlFor="password">
-                      <input type="text" name="password" id="password" placeholder="password" value={formData.password} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="password" id="password" placeholder="password" value={formData.password} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
                     <label className="block mt-3" htmlFor="gender">
-                      <input type="text" name="gender" id="gender" placeholder="Gender" value={formData.gender} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="gender" id="gender" placeholder="Gender" value={formData.gender} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
                     <label className="block mt-3" htmlFor="mobile_no">
-                      <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile No" value={formData.mobile_no} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="mobile_no" id="mobile_no" placeholder="Mobile No" value={formData.mobile_no} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label>
                     {/* <label className="block mt-3" htmlFor="user_role">
-                      <input type="text" name="user_role" id="user_role" placeholder="User Role" value={formData.user_role} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                      <input type="text" name="user_role" id="user_role" placeholder="User Role" value={formData.user_role} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-black-300 dark:focus:border-blue-300" />
                     </label> */}
 
                     <label className="block mt-3" htmlFor="user_role">
-                      <select name="user_role" id="user_role" value={formData.user_role} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300">
+                      <select name="user_role" id="user_role" value={formData.user_role} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300">
                         <option value="" disabled>Select Role</option>
                         {userRoleData.data.map((role) => (
                           <option key={role._id} value={role._id}>{role.role}</option>
@@ -196,7 +196,7 @@ export default function User() {
                     </label>
 
                     <div className="mt-4 sm:flex sm:items-center sm:-mx-2">
-                      <button type="button" onClick={handleCloseModal} className="w-full px-4 py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40" disabled={submitting}>
+                      <button type="button" onClick={handleCloseModal} className="w-full px-4 py-2 text-sm font-medium tracking-wide text-black-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-black-200 dark:border-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40" disabled={submitting}>
                         Cancel
                       </button>
 

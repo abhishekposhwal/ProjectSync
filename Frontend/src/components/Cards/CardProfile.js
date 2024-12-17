@@ -60,7 +60,7 @@ export default function CardProfile() {
               <div className="relative">
                 <img
                   alt="..."
-                  src={require("assets/img/team-1-800x800.jpg").default}
+                  src={require("assets/img/team-1-800x800.jpg")}
                   className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                 />
               </div>
@@ -69,7 +69,7 @@ export default function CardProfile() {
               <h3 className="text-xl font-semibold leading-normal mb-1 text-blueGray-700 mt-5">
                 {user.fullName}
               </h3>
-              <div className="text-sm leading-normal mt-0 mb-1 text-blueGray-400 font-bold ">
+              <div className="text-sm leading-normal mt-0 mb-1 text-black-400 font-bold ">
                 {user.email}
               </div>
               {profileData?.data?.academicYear && (

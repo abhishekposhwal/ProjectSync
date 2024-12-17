@@ -207,9 +207,9 @@ export default function Group() {
         <>
             {isOpen && (
                 <div className="fixed inset-0 z-50 overflow-y-auto">
-                    <div className="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-filter backdrop-blur-sm" onClick={handleCloseModal}></div>
+                    <div className="absolute inset-0 bg-white-900 bg-opacity-50 backdrop-filter backdrop-blur-sm" onClick={handleCloseModal}></div>
                     <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-white-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                             <div>
                                 <div className="flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-5 h-5">
@@ -218,15 +218,15 @@ export default function Group() {
                                 </div>
 
                                 <div className="mt-2">
-                                    <h3 className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white text-center" id="modal-title">Add Group</h3>
+                                    <h3 className="text-lg font-medium leading-6 text-black-800 capitalize dark:text-black text-center" id="modal-title">Add Group</h3>
                                     <form onSubmit={handleSubmit} className="mt-4" action="#">
                                         <label className="block mt-3" htmlFor="groupName">
-                                            <input type="text" name="groupName" id="groupName" placeholder="Group Name" value={formData.groupName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+                                            <input type="text" name="groupName" id="groupName" placeholder="Group Name" value={formData.groupName} onChange={handleChange} className="block w-full px-4 py-3 text-sm text-black-700 bg-white border rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40  dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300" />
                                         </label>
 
 
                                         <div className="mt-4 sm:flex sm:items-center sm:-mx-2">
-                                            <button type="button" onClick={handleCloseModal} className="w-full px-4 py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40" disabled={submitting}>
+                                            <button type="button" onClick={handleCloseModal} className="w-full px-4 py-2 text-sm font-medium tracking-wide text-black-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-black-200 dark:border-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40" disabled={submitting}>
                                                 Cancel
                                             </button>
 
@@ -249,7 +249,7 @@ export default function Group() {
                         onClick={handleCloseMemberModal}
                     ></div>
                     <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-white-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                             <div>
                                 <div className="flex items-center justify-center">
                                     <svg
@@ -270,12 +270,12 @@ export default function Group() {
 
                                 <div className="mt-2">
                                     <h3
-                                        className="text-lg font-medium leading-6 text-gray-800 capitalize dark:text-white text-center"
+                                        className="text-lg font-medium leading-6 text-black-800 capitalize dark:text-black text-center"
                                         id="modal-title"
                                     >
                                         Add Member
                                     </h3>
-                                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                                    <p class="mt-2 text-sm text-black-500 dark:text-black-400 mb-2">
                                         Your new group has been successfully created.
                                         Now it's time to invite your team to collaborate on this project.
                                         Together, we can achieve great things!</p>
@@ -286,7 +286,7 @@ export default function Group() {
                                                 id="groupId"
                                                 value={memberFormData.groupId}
                                                 onChange={handleChangeForMember}
-                                                className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                                                className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300"
                                             >
                                                 <option value="" disabled>
                                                     Select Group
@@ -312,7 +312,7 @@ export default function Group() {
                                                 id="userId"
                                                 value={memberFormData.userId}
                                                 onChange={handleChangeForMember}
-                                                className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                                                className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-white-900 dark:text-black-300 dark:focus:border-blue-300"
                                             >
                                                 <option value="" disabled>
                                                     Student
@@ -333,7 +333,7 @@ export default function Group() {
                                                 id="memberRole"
                                                 value={memberFormData.memberRole}
                                                 onChange={handleChangeForMember}
-                                                className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                                                className="block w-full px-4 py-3 text-sm text-black-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-black-900 dark:text-black-300 dark:focus:border-blue-300"
                                             >
                                                 <option value="Leader">Leader</option>
                                                 <option value="Member">Member</option>
@@ -344,7 +344,7 @@ export default function Group() {
                                             <button
                                                 type="button"
                                                 onClick={handleCloseMemberModal}
-                                                className="w-full px-4 py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
+                                                className="w-full px-4 py-2 text-sm font-medium tracking-wide text-black-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-1/2 sm:mx-2 dark:text-black-200 dark:border-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
                                                 disabled={submitting}
                                             >
                                                 Cancel
@@ -376,7 +376,7 @@ export default function Group() {
                         onClick={handleCloseMemberDetailsModal}
                     ></div>
                     <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                        <div className="mt-10 relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right dark:bg-white-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                             <div>
 
 
@@ -390,11 +390,11 @@ export default function Group() {
                                         </div>
 
                                         <div class="mt-4 text-center">
-                                            <h3 class="font-medium leading-6 text-gray-800 capitalize dark:text-white" id="modal-title">
+                                            <h3 class="font-medium leading-6 text-black-800 capitalize dark:text-black" id="modal-title">
                                                 Invite your team
                                             </h3>
 
-                                            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                                            <p class="mt-2 text-sm text-black-500 dark:text-black-400">
                                                 Your new group has been successfully created.
                                                 Now it's time to invite your team to collaborate on this project.
                                                 Together, we can achieve great things!
@@ -402,32 +402,32 @@ export default function Group() {
                                         </div>
                                     </div>
 
-                                    <h3 class="font-medium leading-6 text-gray-800 capitalize dark:text-white mt-5 " id="modal-title">
+                                    <h3 class="font-medium leading-6 text-black-800 text-center capitalize dark:text-black mt-5 " id="modal-title">
                                         Group Name
                                     </h3>
 
                                     <div>
                                         {groupMemberData && groupMemberData.statusCode === 200 && groupMemberData.data && groupMemberData.data.length > 0 ? (
                                             groupMemberData.data.map((member, index) => (
-                                                <div key={index} className="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 mt-3 mb-3">
+                                                <div key={index} className="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-white-800 mt-3 mb-3">
                                                     <div className="w-2 bg-gray-800 dark:bg-gray-900"></div>
                                                     <div className="flex items-center px-2 py-3">
                                                         <img className="object-cover w-10 h-10 rounded-full" alt="User avatar" src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200" />
                                                         <div className="mx-3">
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.name}</p>
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.email}</p>
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.member_role}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.name}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.email}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.member_role}</p>
                                                         </div>
                                                         <div className="mx-3">
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.gender}</p>
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.mobileNumber}</p>
-                                                            <p className="text-gray-600 dark:text-gray-200 text-sm">{member.userInfo.rollNumber}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.gender}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.mobileNumber}</p>
+                                                            <p className="text-black-600 dark:text-black-200 text-sm">{member.userInfo.rollNumber}</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             ))
                                         ) : (
-                                            <p className='text-gray-600 dark:text-gray-200 text-sm text-center mt-5 mb-5'>No group members found.</p>
+                                            <p className='text-black-600 dark:text-black-200 text-sm text-center mt-5 mb-5'>No group members found.</p>
                                         )}
 
 
@@ -436,7 +436,7 @@ export default function Group() {
                                     <button
                                         type="button"
                                         onClick={handleCloseMemberDetailsModal}
-                                        className="mt-5 w-full py-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-full  dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
+                                        className="mt-5 w-full py-2 text-sm font-medium tracking-wide text-black-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:w-full  dark:text-black-200 dark:border-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40"
                                         disabled={submitting}
                                     >
                                         Cancel
@@ -468,7 +468,7 @@ export default function Group() {
                                         </button> */}
 
                                         {addButtonName && (
-                                            <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none"
@@ -487,7 +487,7 @@ export default function Group() {
                                             </button>
                                         )}
                                         {addButtonName && (
-                                            <button onClick={handleOpenMemberModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <button onClick={handleOpenMemberModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none"
@@ -518,14 +518,14 @@ export default function Group() {
                                                         .filter(group => group.createdBy === user._id) // Filter groups created by the current user
                                                         .map((group, groupIndex) => (
                                                             <div key={groupIndex} className="w-full sm:w-1/2 md:w-1/2 lg:w-2/4 xl:w-3/6 px-2 mb-4">
-                                                                <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+                                                                <div className="overflow-hidden bg-white rounded-lg shadow-md dark:bg-white-800">
                                                                     <div className="p-6">
                                                                         <div className="flex items-center justify-between">
                                                                             <span className="text-sm font-light text-gray-600 dark:text-gray-400">
                                                                                 Created at {new Date(group.createdAt).toLocaleDateString()}
                                                                             </span>
 
-                                                                            <button onClick={() => handleOpenMemberDetailsModal(group._id)} class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                                                            <button onClick={() => handleOpenMemberDetailsModal(group._id)} class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:text-black-300">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
                                                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                                                                 </svg>
@@ -533,10 +533,10 @@ export default function Group() {
                                                                         </div>
 
                                                                         <div className="flex items-center justify-between">
-                                                                            <span className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600">
+                                                                            <span className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-black hover:text-gray-600">
                                                                                 {group.name}
                                                                             </span>
-                                                                            <button onClick={() => handleDeleteGroup(group._id)} class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">
+                                                                            <button onClick={() => handleDeleteGroup(group._id)} class="px-4 py-2 font-medium text-gray-600 transition-colors duration-200 sm:px-6 dark:text-black-300">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
                                                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                                                                                 </svg>
@@ -554,7 +554,7 @@ export default function Group() {
                                                 {groupData && groupData.length === 0 && (
                                                     <div className="flex items-center mt-6 text-center border rounded-lg h-96 dark:border-gray-700 mb-5">
                                                         <div className="flex flex-col w-full max-w-sm px-4 mx-auto">
-                                                            <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-gray-800">
+                                                            <div className="p-3 mx-auto text-blue-500 bg-blue-100 rounded-full dark:bg-white-800">
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     fill="none"
@@ -578,7 +578,7 @@ export default function Group() {
                                                             </p>
                                                             <div className="flex items-center mt-4 sm:mx-auto gap-x-3">
                                                                 {addButtonName && (
-                                                                    <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                                    <button onClick={handleOpenModal} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                                         <svg
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             fill="none"

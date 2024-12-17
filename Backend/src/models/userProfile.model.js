@@ -37,7 +37,7 @@ const userProfileSchema = new Schema(
         },
         // Years of experience of the teacher
         experience: {
-            type: Number,
+            type: String,
         },
         // User ID associated with the user profile
         userId: {

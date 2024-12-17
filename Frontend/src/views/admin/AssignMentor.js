@@ -111,18 +111,18 @@ export default function Settings() {
                 <div className="w-full xl:w-10/12 max-w-2xl">
                     <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-white">
                         <div className="block w-full overflow-x-auto">
-                            <section className="max-w-4xl p-6 mx-auto  dark:bg-gray-800">
-                                <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Search Submission By Group</h2>
+                            <section className="max-w-4xl p-6 mx-auto  dark:bg-white-800">
+                                <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-black">Search Submission By Group</h2>
                                 <form>
                                     <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="groupDropdown">Group</label>
+                                            <label className="text-black-700 dark:text-black-200 text-lg" htmlFor="groupDropdown">Group</label>
                                             <select
                                                 name="groupId"
                                                 id="groupId"
                                                 value={formData.groupId}
                                                 onChange={handleChange}
-                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-4 py-2 mt-2 text-black-700 text-sm bg-white border rounded-md dark:bg-white-800 dark:text-black-300 focus:border-blue-400 focus:ring-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                             >
                                                 <option value="" disabled>
                                                     Select Group
@@ -135,14 +135,14 @@ export default function Settings() {
                                                 ))}
                                             </select>
                                         </div>
-                                        <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="groupDropdown">Mentor</label>
+                                        <div className="">
+                                            <label className="text-black-700 dark:text-black-200 text-lg" htmlFor="groupDropdown">Mentor</label>
                                             <select
                                                 name="userId"
                                                 id="userId"
                                                 value={formData.userId}
                                                 onChange={handleChange}
-                                                className="block w-full px-4 py-3 text-sm text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                                                className="block w-full px-4 py-2 mt-2 text-black-700 text-sm bg-white border rounded-md dark:bg-white-800 dark:text-black-300 focus:border-blue-400 focus:ring-blue-400 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                             >
                                                 <option value="" disabled>
                                                     Mentor
@@ -156,7 +156,7 @@ export default function Settings() {
                                         </div>
                                     </div>
                                     <div className="flex justify-end mt-6">
-                                        <button onClick={assignMentor} className="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Assign</button>
+                                        <button onClick={assignMentor} className="flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">Assign</button>
                                     </div>
                                 </form>
                             </section>

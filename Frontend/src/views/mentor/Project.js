@@ -110,18 +110,18 @@ export default function Settings() {
                 <div className="w-full xl:w-10/12">
                     <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-white">
                         <div className="block w-full overflow-x-auto">
-                            <section className="max-w-4xl p-6 mx-auto  dark:bg-gray-800">
-                                <h2 className="text-lg font-semibold text-gray-700 capitalize dark:text-white">Project Destails</h2>
+                            <section className="max-w-4xl p-6 mx-auto  dark:bg-white-800">
+                                <h2 className="text-lg font-semibold text-black-700 capitalize dark:text-black">Project Details</h2>
                                 <form>
                                     <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1">
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="groupDropdown">Group</label>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="groupDropdown">Group</label>
                                             <select
                                                 name="groupId"
                                                 id="groupId"
                                                 value={formData.groupId}
                                                 onChange={handleChange}
-                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                             >
                                                 <option value="" disabled>
                                                     Select Group
@@ -140,7 +140,7 @@ export default function Settings() {
                                             </select>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="projectCategory">Project Category</label>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="projectCategory">Project Category</label>
 
                                             <select
                                                 name="projectCategoryId"
@@ -148,7 +148,7 @@ export default function Settings() {
                                                 required
                                                 value={formData.projectCategoryId}
                                                 onChange={handleChange}
-                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                                             >
                                                 <option value="" disabled>
                                                     Select Project Category
@@ -162,43 +162,43 @@ export default function Settings() {
                                             </select>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="title">Title</label>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="title">Title</label>
                                             <input
                                                 name="title"
                                                 id="title"
                                                 value={formData.title}
                                                 onChange={handleChange}
                                                 type="text"
-                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                                                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="problemStatement">Problem Statement</label>
-                                            <textarea name="problemStatement" id="problemStatement" value={formData.problemStatement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="problemStatement">Problem Statement</label>
+                                            <textarea name="problemStatement" id="problemStatement" value={formData.problemStatement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="introduction">Introduction</label>
-                                            <textarea name="introduction" id="introduction" value={formData.introduction} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="introduction">Introduction</label>
+                                            <textarea name="introduction" id="introduction" value={formData.introduction} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="requiredTechnology">Required Technology</label>
-                                            <textarea id="requiredTechnology" name="requiredTechnology" value={formData.requiredTechnology} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="requiredTechnology">Required Technology</label>
+                                            <textarea id="requiredTechnology" name="requiredTechnology" value={formData.requiredTechnology} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="softwareRequirement">Software Requirement</label>
-                                            <textarea id="softwareRequirement" name="softwareRequirement" value={formData.softwareRequirement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="softwareRequirement">Software Requirement</label>
+                                            <textarea id="softwareRequirement" name="softwareRequirement" value={formData.softwareRequirement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
 
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="hardwareRequirement">Hardware Requirement</label>
-                                            <textarea id="hardwareRequirement" name="hardwareRequirement" value={formData.hardwareRequirement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="hardwareRequirement">Hardware Requirement</label>
+                                            <textarea id="hardwareRequirement" name="hardwareRequirement" value={formData.hardwareRequirement} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="conclusion">Conclusion</label>
-                                            <textarea id="conclusion" name="conclusion" value={formData.conclusion} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="conclusion">Conclusion</label>
+                                            <textarea id="conclusion" name="conclusion" value={formData.conclusion} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
                                         <div>
-                                            <label className="text-gray-700 dark:text-gray-200" htmlFor="references">Refrences</label>
-                                            <textarea id="references" name="references" value={formData.references} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
+                                            <label className="text-black-700 dark:text-black-200" htmlFor="references">Refrences</label>
+                                            <textarea id="references" name="references" value={formData.references} onChange={handleChange} className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-white-800 dark:text-black-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" rows="4"></textarea>
                                         </div>
 
 

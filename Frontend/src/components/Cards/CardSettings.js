@@ -20,6 +20,8 @@ export default function CardSettings() {
     department: "",
     roleDuringProject: "",
     academicYear: "",
+    areasOfExpertise: "",
+    experience: "",
   });
 
 
@@ -103,7 +105,7 @@ export default function CardSettings() {
       console.error("Error fetching users:", error.message);
     }
   };
-
+  
   const handleCourseChange = (e) => {
     const selectedCourseId = e.target.value;
     setFormData({ ...formData, course: selectedCourseId, department: '' });
@@ -211,7 +213,7 @@ export default function CardSettings() {
           <div className="text-center flex justify-between">
             <h6 className="text-blueGray-700 text-xl font-bold">My account</h6>
             <button
-              className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+              className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150flex items-center justify-center w-1/2 px-5 py-2 text-xs tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600"
               type="submit"
               onClick={handleSubmit}
             >
@@ -389,7 +391,12 @@ export default function CardSettings() {
                   </div>
                   <div className="w-full lg:w-6/12 px-4">
                     <div className="relative w-full mb-3">
-
+                    <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="department"
+                      >
+                        Areas Of Expertise
+                      </label>
                       <select
                         name="projectCategoryId"
                         id="projectCategoryId"
@@ -398,7 +405,7 @@ export default function CardSettings() {
                         onChange={(e) =>
                           setFormData({ ...formData, areasOfExpertise: e.target.value })
                         }
-                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       >
                         <option value="" disabled>
                           Select Project Category
